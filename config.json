@@ -1,0 +1,81 @@
+{
+    "urls": [
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/zincir-detayli-makosen-p12509430.html?v1=410597614",
+            "sizes_to_check": ["37"]
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/yumusak-dokulu-oversize-kaban-p03046037.html?v1=434384603",
+            "sizes_to_check": ["XS"]
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/uzun-bedene-oturan-triko-ceket-p04192135.html?v1=447237745",
+            "sizes_to_check": ["M"]
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/balikci-yaka-t-shirt-p04174678.html?v1=410926001&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
+            "sizes_to_check": ["M"]
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/bootcut-nervurlu-pantolon-p02230576.html?v1=465232568&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
+            "sizes_to_check": ["M"]
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/duz-orgu-kemerli-ceket-p03519026.html?v1=427235337&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
+            "sizes_to_check": ["M"]
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/sim-detayli-pantolon-p01131337.html?v1=428596177&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
+            "sizes_to_check": ["S"]
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/zw-collection-yunlu-kisa-kaban-p02404762.html?v1=426786155&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
+            "sizes_to_check": ["S"]
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/kontrast-sisme-mont-p08073227.html?v1=431955923&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
+            "sizes_to_check": ["XL"]
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/simli-yazili-sweatshirt-p01131321.html?v1=424938361&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
+            "sizes_to_check": ["M"]
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/balikci-yaka-t-shirt-p04174678.html?v1=410926000&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
+            "sizes_to_check": ["L"]
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/simli-yazili-sweatshirt-p01131321.html?v1=424938361&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
+            "sizes_to_check": ["M"]
+        },
+        
+
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/golden-decade---cashmere-extrait-de-parfum-50ml--1-7-fl--oz---p20110797.html?v1=441038371&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil"
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/share/hypnotic-vanilla---orange-bloss-extrait-de-parfum-50ml--1-7-fl--oz---p20110826.html?v1=441034371&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil"
+        },
+                {
+            "store": "zara",
+            "url": "https://www.zara.com/share/red-zara-temptation-elixir-parfum-80-ml--2-7-fl--oz---p20110732.html?v1=413352705&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil"
+        }
+        
+    ],
+    "sleep_min_seconds": 12,
+    "sleep_max_seconds": 22
+}
