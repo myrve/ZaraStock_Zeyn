@@ -4,7 +4,6 @@ import random
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
-import pygame
 from dotenv import load_dotenv
 import os
 import requests
@@ -17,8 +16,6 @@ with open("config.json", "r") as config_file:
 urls_to_check = config["urls"]
 sleep_min_seconds = config["sleep_min_seconds"]
 sleep_max_seconds = config["sleep_max_seconds"]
-
-pygame.mixer.init()
 
 cart_status = {item["url"]: False for item in urls_to_check}
 
@@ -33,12 +30,10 @@ if not BOT_API or not CHAT_ID:
 else:
     TELEGRAM_ENABLED = True
 
+# play_sound fonksiyonunu tamamen kaldırıyoruz veya boş bırakıyoruz
 def play_sound(sound_file):
-    try:
-        pygame.mixer.music.load(sound_file)
-        pygame.mixer.music.play()
-    except Exception as e:
-        print(f"Ses dosyası çalınamadı: {e}")
+    # Railway'de ses çalmak mümkün değil, bu fonksiyonu boş bırakıyoruz.
+    pass
 
 def send_telegram_message(message):
     if not TELEGRAM_ENABLED:
@@ -93,7 +88,7 @@ while True:
                             if size_in_stock:
                                 message = f"🛍️{size_in_stock} beden stokta!!!!\nLink: {url}"
                                 print(f"ALERT: {message}")
-                                play_sound('Crystal.mp3')
+                                play_sound('Crystal.mp3')  # Artık bir şey yapmaz
                                 send_telegram_message(message)
                                 cart_status[item["url"]] = True
                             else:
@@ -103,7 +98,7 @@ while True:
                             if size_in_stock is not None:
                                 message = f"🛍️ Ürün stokta!\nLink: {url}"
                                 print(f"ALERT: {message}")
-                                play_sound('Crystal.mp3')
+                                play_sound('Crystal.mp3')  # Artık bir şey yapmaz
                                 send_telegram_message(message)
                                 cart_status[item["url"]] = True
                             else:
