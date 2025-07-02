@@ -33,8 +33,20 @@
         {
             "store": "zara",
             "url": "https://www.zara.com/share/sim-detayli-pantolon-p01131337.html?v1=428596177&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
+            "sizes_to_check": ["S, M"]
+        },
+
+
+
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/tr/tr/kisa-elbise-p01058151.html?v1=419342931&v2=2580270",
             "sizes_to_check": ["S"]
         },
+
+
+
+
         {
             "store": "zara",
             "url": "https://www.zara.com/share/zw-collection-yunlu-kisa-kaban-p02404762.html?v1=426786155&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
