@@ -9,7 +9,6 @@ RUN apt-get update && apt-get install -y \
     libnss3 \
     libxss1 \
     libappindicator1 \
-    libindicator7 \
     fonts-liberation \
     libasound2 \
     libatk-bridge2.0-0 \
