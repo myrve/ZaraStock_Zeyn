@@ -33,17 +33,20 @@ def send_telegram_message(message):
         print("⚠️ Telegram message skipped (missing BOT_API or CHAT_ID).")
         return
 
-    url = f"https://api.telegram.org/bot{BOT_API}/sendMessage"
-    payload = {
-        "chat_id": CHAT_ID,
-        "text": message
-    }
-    try:
-        response = requests.post(url, data=payload, timeout=10)
-        response.raise_for_status()
-        print("Telegram message sent.")
-    except requests.exceptions.RequestException as e:
-        print(f"Failed to send Telegram message: {e}")
+    chat_ids = [chat_id.strip() for chat_id in CHAT_ID.split(",")]
+    for chat_id in chat_ids:
+        url = f"https://api.telegram.org/bot{BOT_API}/sendMessage"
+        payload = {
+            "chat_id": chat_id,
+            "text": message
+        }
+        try:
+            response = requests.post(url, data=payload, timeout=10)
+            response.raise_for_status()
+            print(f"Telegram message sent to {chat_id}.")
+        except requests.exceptions.RequestException as e:
+            print(f"Failed to send Telegram message to {chat_id}: {e}")
+
 
 # --- DRIVER'ı döngü dışında bir kez açıyoruz ---
 chrome_options = Options()
