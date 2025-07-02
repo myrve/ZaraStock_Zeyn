@@ -5,12 +5,12 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import pygame
-from webdriver_manager.chrome import ChromeDriverManager
 from dotenv import load_dotenv
 import os
 import requests
 from scraperHelpers import check_stock_zara
 
+# Config dosyasını oku
 with open("config.json", "r") as config_file:
     config = json.load(config_file)
 
@@ -34,8 +34,11 @@ else:
     TELEGRAM_ENABLED = True
 
 def play_sound(sound_file):
-    pygame.mixer.music.load(sound_file)
-    pygame.mixer.music.play()
+    try:
+        pygame.mixer.music.load(sound_file)
+        pygame.mixer.music.play()
+    except Exception as e:
+        print(f"Ses dosyası çalınamadı: {e}")
 
 def send_telegram_message(message):
     if not TELEGRAM_ENABLED:
@@ -55,8 +58,9 @@ def send_telegram_message(message):
         print(f"Failed to send Telegram message: {e}")
 
 while True:
+    # Railway için Selenium ayarları (Chrome ve ChromeDriver path'leri sabit)
     chrome_options = Options()
-    chrome_options.add_argument("--headless=new")
+    chrome_options.add_argument("--headless")
     chrome_options.add_argument("--window-size=1920,1080")
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--no-sandbox")
@@ -64,8 +68,10 @@ while True:
     chrome_options.add_argument(
         "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
     )
+    chrome_options.binary_location = "/usr/bin/chromium"  # Railway için zorunlu
 
-    service = Service(ChromeDriverManager().install())
+    # Webdriver'ı başlat (Railway'de webdriver_manager kullanma!)
+    service = Service("/usr/bin/chromedriver")
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
     try:
@@ -89,6 +95,7 @@ while True:
                                 print(f"ALERT: {message}")
                                 play_sound('Crystal.mp3')
                                 send_telegram_message(message)
+                                cart_status[item["url"]] = True
                             else:
                                 print(f"Checked {url} - no stock found for sizes {', '.join(sizes)}.")
                         else:  # Beden yoksa, stok kontrolünü beden olmadan yapabilirsin
@@ -98,6 +105,7 @@ while True:
                                 print(f"ALERT: {message}")
                                 play_sound('Crystal.mp3')
                                 send_telegram_message(message)
+                                cart_status[item["url"]] = True
                             else:
                                 print(f"Checked {url} - no stock found (no size specified).")
                     else:
