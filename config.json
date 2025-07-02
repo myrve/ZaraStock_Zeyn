@@ -33,24 +33,8 @@
         {
             "store": "zara",
             "url": "https://www.zara.com/share/sim-detayli-pantolon-p01131337.html?v1=428596177&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
-            "sizes_to_check": ["S, M"]
-        },
-
-
-
-        {
-            "store": "zara",
-            "url": "https://www.zara.com/tr/tr/kisa-elbise-p01058151.html?v1=419342931&v2=2580270",
             "sizes_to_check": ["S"]
         },
-        {
-            "store": "zara",
-            "url": "https://www.zara.com/tr/tr/printed-poplin-dress-with-cut-out-detail-p02877208.html?v1=437826638&v2=2580270",
-            "sizes_to_check": ["M"]
-        },
-
-
-
         {
             "store": "zara",
             "url": "https://www.zara.com/tr/tr/printed-poplin-dress-with-cut-out-detail-p02877208.html?v1=437826638&v2=2580270",
@@ -94,7 +78,29 @@
                 {
             "store": "zara",
             "url": "https://www.zara.com/share/red-zara-temptation-elixir-parfum-80-ml--2-7-fl--oz---p20110732.html?v1=413352705&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil"
+        },
+
+
+
+
+                {
+            "store": "zara",
+            "url": "https://www.zara.com/tr/tr/contrast-striped-poplin-shirt-p02796545.html?v1=437166889",
+            "sizes_to_check": ["S"]
+        },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/tr/tr/soft-bomber-jacket-with-elastic-trims-p03046274.html?v1=423157011",
+            "sizes_to_check": ["M"]
+        },
+                {
+            "store": "zara",
+            "url": "https://www.zara.com/tr/tr/leather-effect-bomber-jacket-p04341855.html?v1=410590363",
+            "sizes_to_check": ["S"]
         }
+
+
+
         
     ],
     "sleep_min_seconds": 12,
