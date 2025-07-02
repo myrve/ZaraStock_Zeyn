@@ -43,10 +43,19 @@
             "url": "https://www.zara.com/tr/tr/kisa-elbise-p01058151.html?v1=419342931&v2=2580270",
             "sizes_to_check": ["S"]
         },
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/tr/tr/printed-poplin-dress-with-cut-out-detail-p02877208.html?v1=437826638&v2=2580270",
+            "sizes_to_check": ["M"]
+        },
 
 
 
-
+        {
+            "store": "zara",
+            "url": "https://www.zara.com/tr/tr/printed-poplin-dress-with-cut-out-detail-p02877208.html?v1=437826638&v2=2580270",
+            "sizes_to_check": ["S"]
+        },
         {
             "store": "zara",
             "url": "https://www.zara.com/share/zw-collection-yunlu-kisa-kaban-p02404762.html?v1=426786155&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
