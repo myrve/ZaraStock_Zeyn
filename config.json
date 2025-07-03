@@ -35,11 +35,7 @@
             "url": "https://www.zara.com/share/sim-detayli-pantolon-p01131337.html?v1=428596177&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
             "sizes_to_check": ["S"]
         },
-        {
-            "store": "zara",
-            "url": "https://www.zara.com/tr/tr/printed-poplin-dress-with-cut-out-detail-p02877208.html?v1=437826638&v2=2580270",
-            "sizes_to_check": ["S"]
-        },
+
         {
             "store": "zara",
             "url": "https://www.zara.com/share/zw-collection-yunlu-kisa-kaban-p02404762.html?v1=426786155&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
@@ -59,11 +55,6 @@
             "store": "zara",
             "url": "https://www.zara.com/share/balikci-yaka-t-shirt-p04174678.html?v1=410926000&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
             "sizes_to_check": ["L"]
-        },
-        {
-            "store": "zara",
-            "url": "https://www.zara.com/share/simli-yazili-sweatshirt-p01131321.html?v1=424938361&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil",
-            "sizes_to_check": ["M"]
         },
         
 
@@ -92,13 +83,7 @@
             "store": "zara",
             "url": "https://www.zara.com/tr/tr/soft-bomber-jacket-with-elastic-trims-p03046274.html?v1=423157011",
             "sizes_to_check": ["M"]
-        },
-                {
-            "store": "zara",
-            "url": "https://www.zara.com/tr/tr/leather-effect-bomber-jacket-p04341855.html?v1=410590363",
-            "sizes_to_check": ["S"]
         }
-
 
 
         
